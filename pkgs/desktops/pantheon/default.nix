@@ -13,6 +13,7 @@ lib.makeScope pkgs.newScope (self: with self; {
     switchboard-plug-power switchboard-plug-printers
     switchboard-plug-security-privacy switchboard-plug-sharing
     switchboard-plug-sound switchboard-plug-wacom
+    switchboard-plug-locale
   ];
 
   wingpanelIndicators = [
@@ -190,6 +191,8 @@ lib.makeScope pkgs.newScope (self: with self; {
   switchboard-plug-sound = callPackage ./apps/switchboard-plugs/sound { };
 
   switchboard-plug-wacom = callPackage ./apps/switchboard-plugs/wacom { };
+
+  switchboard-plug-locale = callPackage ./apps/switchboard-plugs/locale { };
 
   ### ARTWORK
 
